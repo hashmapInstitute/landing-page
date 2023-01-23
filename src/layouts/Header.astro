@@ -1,0 +1,48 @@
+---
+import Button from "../components/Button.astro"
+---
+
+<nav class="container header">
+  <div class="logo">Hashmap Institute</div>
+  <ul>
+    <li><a href="#">Offer</a></li>
+    <li><a href="#">Course</a></li>
+    <li><a href="#">How it works</a></li>
+    <li><a href="#">Why us</a></li>
+    <li><a href="#">Pricing</a></li>
+    <li><a href="#">Contact us</a></li>
+  </ul>
+  <Button />
+</nav>
+<style>
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .logo {
+    font-size: 36px;
+    /* display: inline-block; */
+    font-family: 'Antonio', serif;
+  }
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  ul li {
+    display: inline-block;
+  }
+
+  ul li a {
+    display: inline-block;
+    padding: 8px;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: black;
+  }
+  .header {
+    background-color: white;
+  }
+</style>
