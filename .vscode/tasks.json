@@ -1,0 +1,16 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "pnpm",
+			"script": "dev",
+			"problemMatcher": [],
+			"label": "pnpm: dev",
+			"detail": "astro dev",
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			}
+		}
+	]
+}
