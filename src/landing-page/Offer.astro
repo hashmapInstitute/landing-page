@@ -1,0 +1,49 @@
+---
+import Card from '../components/Card.astro'
+---
+
+<div class="offer">
+    <div class="offer__container container">
+        <div class="offer__title">
+            <h2>What we offer</h2>
+        </div>
+        <div class="offer-card__container" >
+            <Card 
+                title="Focus on the fundamentals" 
+                body="We believe that focusing on the fundatmentals of web development and programming will not only improve your employment chances but also set you on a road to faster growth in your career as a whole"
+                imgUrl="/images/hop-scotch-numbers.jpeg"
+            />
+            <Card 
+                title="Individual Support" 
+                body="Individual support is one of the kes to learning faster, instead of being lost in a crowd of students, you will have a dedicated mentor to help you through the process"
+                imgUrl="/images/Mentor.jpeg"
+            />
+            <Card 
+                title="Hands on coding" 
+                body="the only way to truly learn how to code is to code, we will be spending most of our time writing code and solving problems"
+                imgUrl="/images/react-router-code.jpeg"
+            />
+        </div>
+    </div>
+</div>
+
+<style>
+    .offer__container.container {
+        /* border: solid 1px black; */
+    }
+    .offer-card__container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        /* align-items: baseline; */
+    }
+    .offer__title {
+        text-align: center;
+        margin-bottom: 24px;
+        font-size: 36px;
+    }
+
+    .offer__title h2 {
+        margin: 0;
+    }
+</style>

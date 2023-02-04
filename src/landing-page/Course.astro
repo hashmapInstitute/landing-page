@@ -1,0 +1,38 @@
+---
+import TechCard from "./components/TechCard.astro";
+
+const bodyText = "Providing access to an online course to allow students to study through out the week, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse "
+
+const htmlText = `You will learn the basics of creating websites using Hypertext Markup Language (HTML). This includes understanding HTML elements and structure, creating web pages using HTML tags, and formatting content using CSS. You will also learn how to use HTML to create links, images, tables, lists, and forms. By the end of the bootcamp, you will have a solid foundation in HTML and be able to create basic web pages with confidence. Additionally, you will learn about HTML5, the latest version of HTML, and its new features.`
+const cssText = `You will learn how to style HTML elements and create visually appealing web pages. You will learn about the CSS box model, how to position elements on the page, and how to control the layout of a web page using CSS. You will also learn about the various CSS selectors and how to apply styles to specific elements. Additionally, you will learn about responsive design, which allows websites to adjust to different screen sizes, and CSS preprocessors such as SASS or LESS. You will also learn how to use CSS to control the color, typography, and overall look and feel of a website. By the end of the bootcamp, you will have a solid understanding of CSS and be able to create well-designed and responsive web pages.`
+const jsText = `You will learn the fundamental concepts and syntax of the JavaScript programming language. You will start with basic programming concepts such as data types, variables, control structures, and functions, and then move on to more advanced topics such as objects and arrays. you will learn about asynchronous Javascript with callbacks and promises. By the end of the bootcamp, you will have a strong understanding of the core concepts of JavaScript and be able to write basic JavaScript programs and implement dynamic and interactive features in web pages. The bootcamp will also cover best practices in coding and software development, such as testing and debugging, to help you become a more effective and efficient programmer.`
+const clientSide = `You will learn how to use JavaScript to add interactivity and dynamic behavior to web pages. You will learn about the Document Object Model (DOM) and how to manipulate it using JavaScript, as well as event handling and how to make asynchronous requests to a server using AJAX. You will also learn about JavaScript libraries such as jQuery and how to use them to simplify common tasks and improve the overall user experience. Additionally, you will learn about responsive design and how to make web pages adapt to different screen sizes and devices. By the end of the bootcamp, you will have a solid understanding of client-side JavaScript and be able to create dynamic and interactive web pages.`
+const serverSide = `You will learn how to use JavaScript to build server-side applications. You will learn about Node.js, a popular JavaScript runtime for building server-side applications, and how to use it to build a variety of applications, from simple scripts to full-fledged web applications. You will also learn about npm, the Node.js package manager, and how to use it to manage dependencies in your projects. Additionally, you will learn about server-side frameworks such as Express and how to use them to build web applications more efficiently. You will also learn about databases and how to integrate them with your server-side applications. By the end of the bootcamp, you will have a solid understanding of server-side JavaScript and be able to build scalable and robust server-side applications.`
+const databases = `You will learn about various database systems and how to use them to store and manage data. You will learn about relational databases, such as MySQL and PostgreSQL, and how to use SQL to interact with them. You will also learn about NoSQL databases, such as MongoDB, and how to use them to store and retrieve data in a non-relational format. Additionally, you will learn about database design, including normalization and indexing, and how to use database management tools such as phpMyAdmin and MongoDB Compass. By the end of the bootcamp, you will have a solid understanding of databases and be able to design and implement efficient and scalable database systems.`
+---
+
+<div class="course container">
+  <div class="course__title">
+    <h2>What you will learn</h2>
+  </div>
+  <div class="cards">
+    <TechCard title="HTML" body={htmlText} />
+    <TechCard title="CSS" body={cssText} />
+    <TechCard title="Core Javascript" body={jsText} />
+    <TechCard title="Client Side Javascript" body={clientSide} />
+    <TechCard title="Serverside Javascript" body={serverSide} />
+    <TechCard title="Databases" body={databases} />
+  </div>
+</div>
+
+<style>
+  .course__title {
+    text-align: center;
+  }
+  
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+</style>
