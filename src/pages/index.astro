@@ -6,6 +6,7 @@ import Hero from '../landing-page/Hero.astro';
 import Course from '../landing-page/Course.astro';
 import MailingList from '../landing-page/MailingList.astro';
 import HowItWorks from '../landing-page/HowItWorks.astro';
+import WhyUs from '../landing-page/WhyUs.astro';
 ---
 
 <Layout title="Welcome to Astro.">
@@ -13,8 +14,18 @@ import HowItWorks from '../landing-page/HowItWorks.astro';
 		<Hero />
 		<Offer />
 		<Course />
-		<MailingList />
-		<!-- <HowItWorks /> -->
+		<MailingList 
+			title="Join the mailing list" 
+			text="We regularly give tips, trick and helpful advice about becoming a web developer, and the what going on the web development world"
+			buttonText="join"
+		/>
+		<HowItWorks />
+		<MailingList 
+			title="Want to know more then please ask us anything" 
+			text="We want you to succeed, so please let us help, is it about the course, is it about your career,  is it about the code, if we can help we!" 
+			buttonText="Contact us"
+		/>
+		<WhyUs />
 		<Form />
 	</main>
 </Layout>

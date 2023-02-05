@@ -1,0 +1,165 @@
+---
+import NumberedCard from "./components/NumberedCard.astro";
+import { Accordion, AccordionItem } from "accessible-astro-components";
+---
+
+<div class="why-us container">
+  <h2>Why Us</h2>
+  <div class="why-us">
+    <Accordion>
+      <AccordionItem header="Focus on the fundamentals">
+        <p>
+          Focusing on the fundamentals helps people learn better because it
+          provides a strong foundation for more advanced topics. By starting
+          with the basics and understanding the core concepts and building
+          blocks of a subject, learners are able to grasp new information more
+          easily and apply it in practical ways. This leads to a deeper and more
+          comprehensive understanding of the subject, as well as increased
+          confidence and mastery in using the skills learned.
+          <br /><br />
+          For example, in software development, learning the fundamentals of programming
+          concepts such as data types, variables, control structures, and functions
+          lays the foundation for understanding more complex topics such as algorithms,
+          data structures, and web development. Focusing on the fundamentals helps
+          learners build a solid understanding of the subject, which they can then
+          build upon as they learn more advanced topics.
+          <br /><br />
+          Additionally, by focusing on the fundamentals, learners are able to see
+          the connections between different topics and how they fit together, leading
+          to a more holistic understanding of the subject. This also makes it easier
+          to recall information and apply it in new and different contexts.
+        </p>
+      </AccordionItem>
+      <AccordionItem header="Long term learning Techniques">
+        <p>
+          Long-term techniques for learning something new are often more
+          effective because they promote deeper understanding and retention of
+          the information. Rather than relying on rote memorization or
+          short-term fixes, these techniques focus on developing a deep
+          understanding of the subject matter and promoting long-term retention.
+          <br /><br />
+          Some of the benefits of long-term techniques for learning include:
+          <br /><br />
+          Improved comprehension: By focusing on understanding the concepts and how
+          they fit together, learners are able to see the big picture and grasp the
+          subject matter more fully.
+          <br /><br />
+          Increased retention: When information is learned in a meaningful way and
+          connected to existing knowledge, it is more likely to be remembered in
+          the long term.
+          <br /><br />
+          Better transfer of knowledge: Learning techniques that focus on understanding
+          and retention are more likely to lead to better transfer of knowledge to
+          new and different situations.
+          <br /><br />
+          Deeper engagement: By focusing on the fundamentals and understanding the
+          underlying concepts, learners are more likely to be engaged with the material
+          and motivated to continue learning.
+          <br /><br />
+          Long-term techniques for learning may include approaches such as spaced
+          repetition, elaborative interrogation, self-explanation, and interleaved
+          practice.
+          <br /><br />
+          These techniques promote deep understanding and long-term retention by
+          encouraging learners to actively engage with the material and connect it
+          to their existing knowledge.
+        </p>
+      </AccordionItem>
+      <AccordionItem header="Focused Feedback">
+        <p>
+          Focused feedback is incredibly valuable when learning something new
+          because it helps learners to identify areas of strength and
+          improvement, and provides guidance on how to address any gaps in
+          knowledge or skills. Focused feedback provides learners with specific,
+          targeted information on what they are doing well and what they need to
+          work on, allowing them to focus their efforts and make the most of
+          their time and resources.
+          <br /><br />
+          Some of the benefits of focused feedback include:
+          <br /><br />
+          Improved performance: By receiving targeted feedback on specific areas
+          of strength and improvement, learners are able to make more informed decisions
+          about how to focus their efforts and improve their performance.
+          <br /><br />
+          Increased motivation: Focused feedback can help learners to see their progress
+          and feel a sense of accomplishment, which can increase motivation and engagement.
+          <br /><br />
+          Better understanding: Feedback that is focused on specific areas of improvement
+          can help learners to understand their strengths and weaknesses, and identify
+          areas where they need to focus their efforts.
+          <br /><br />
+          Enhanced learning: Focused feedback can help learners to refine their skills
+          and gain a deeper understanding of the subject matter, leading to improved
+          performance and mastery.
+          <br /><br />
+          Focused feedback can be provided through a variety of means, including
+          one-on-one instruction, peer feedback, self-assessment, or online resources.
+          The key is that the feedback is specific, targeted, and provides actionable
+          guidance for improvement.
+        </p>
+      </AccordionItem>
+      <AccordionItem header="Highly Experienced instructor">
+        <p>
+          Having a highly experienced instructor when learning something new can
+          bring a wealth of benefits and add significant value to the learning
+          experience. A highly experienced instructor has a deep understanding
+          of the subject matter and has likely encountered a wide variety of
+          challenges and situations in their practice, providing valuable
+          insights and perspectives that can enhance the learning experience.
+          <br /><br />
+          Some of the benefits of having a highly experienced instructor include:
+          <br /><br />
+          Expertise and knowledge: A highly experienced instructor has a deep understanding
+          of the subject matter, including the latest developments and best practices,
+          which can provide valuable insights and perspectives that can enhance the
+          learning experience.
+          <br /><br />
+          Real-world experience: A highly experienced instructor has likely encountered
+          a wide variety of challenges and situations in their practice, which can
+          bring real-world examples and practical applications to the learning experience.
+          <br /><br />
+          Effective instruction: An experienced instructor has honed their teaching
+          skills and has the ability to effectively communicate and explain complex
+          concepts in a way that is easy to understand.
+          <br /><br />
+          Personal attention: An experienced instructor is often able to provide
+          individualized attention and support to learners, helping to address their
+          specific needs and challenges.
+          <br /><br />
+          Inspiration: A highly experienced instructor can bring inspiration and
+          motivation to learners by sharing their passion and expertise, encouraging
+          learners to explore their full potential.
+          <br /><br />
+          Enhanced learning: A highly experienced instructor can help learners to
+          develop a deeper understanding of the subject matter and gain a more comprehensive
+          understanding of the concepts and skills being taught.
+          <br /><br />
+          Increased motivation: A highly experienced instructor can help learners
+          to see the value of the subject matter and feel a sense of accomplishment,
+          which can increase motivation and engagement.
+          <br /><br />
+          Having a highly experienced instructor can significantly enhance the learning
+          experience, providing learners with the expertise, real-world experience,
+          effective instruction, personal attention, and inspiration that can help
+          them to achieve their goals and succeed in their endeavors.
+        </p>
+      </AccordionItem>
+    </Accordion>
+  </div>
+</div>
+
+<style>
+  .why-us h2 {
+    text-align: center;
+  }
+  .why-us.cards {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .accordion__item h3 button {
+    font-size: 26px;
+    /* margin: 0 0 0.5rem; */
+    color: var(--hi-purple);
+  }
+</style>

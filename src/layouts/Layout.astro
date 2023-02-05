@@ -29,6 +29,7 @@ const { title } = Astro.props;
 		<slot />
 	</body>
 </html>
+
 <style is:global>
 	:root {
 		--accent: 124, 58, 237;
@@ -39,6 +40,9 @@ const { title } = Astro.props;
 		--hi-gold: #FCE15C;
 		--hi-peach: #FDB38E;
 		--hi-light-purple: #DA8EFD;
+		--font-header: "Montserrat", sans-serif;
+		--font-text: "Cabin", sans-serif;
+
 	}
 	html {
 		font-family: system-ui, sans-serif;
@@ -53,7 +57,8 @@ const { title } = Astro.props;
 			Bitstream Vera Sans Mono, Courier New, monospace;
 	}
 	h2, h3, h4, h5, h6 {
-		font-family: "Montserrat", sans-serif;
+		font-family: var(--font-header);
+		margin: 0;
 	}
 	h2 {
 		font-size: 44px;
@@ -69,6 +74,14 @@ const { title } = Astro.props;
 	p {
 		font-size: 16px;
 		line-height: 24px;
-		font-family: "Cabin", sans-serif;
+		font-family: var(--font-text);
+	}
+
+	.accordion__item h3 button {
+		font-size: 26px;
+		font-family: var(--font-header);
+    color: var(--hi-purple);
+		/* background-color: var(--hi-gold); */
+		background-color: white;
 	}
 </style>

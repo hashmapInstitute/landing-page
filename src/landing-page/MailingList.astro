@@ -1,15 +1,17 @@
 ---
 import Button from "../components/Button.astro";
+
+const { title, text, buttonText } = Astro.props;
 ---
 
 <div class="mailing-list container">
-  <h2>Join the mailing list</h2>
+  <h2>{title}</h2>
   <p>
-    We regularly give tips, trick and helpful advice about becoming a web developer, and the what going on the web development world
+    {text}
   </p>
   <form>
-    <input type="email" placeholder="Your email address" />
-    <Button text="Join"></Button>
+    <!-- <input type="email" placeholder="Your email address" /> -->
+    <Button text={buttonText}></Button>
   </form>
 </div>
 
