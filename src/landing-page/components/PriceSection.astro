@@ -1,0 +1,79 @@
+---
+import Button from "../../components/Button.astro";
+const { price, title, mentorSessions, codingPlatform } = Astro.props;
+---
+
+<section class="price">
+  <p class="title">{title}</p>
+  <p class="early-bird">Early Bird Pricing</p>
+  <p class="amount">£{price}<span>/mo</span></p>
+  <p class="discount">50% discount</p>
+  <p class="benefit">Video Course</p>
+  {codingPlatform  && <p class="benefit">Online coding platform</p>}
+  <p class="benefit">Projects</p>
+  <p class="benefit">Code Reviews</p>
+  <p class="benefit">{mentorSessions} Mentor session{mentorSessions > 1 ? "s": ""} per week</p>
+  <p class="benefit">Access to online community</p>
+
+  <div class="btn__container">
+    <Button text={'Buy Now'}></Button>
+  </div>
+</section>
+
+
+<style>
+  .price {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: flex-start;
+    padding: 2rem;
+    border: 1px solid var(--hi-purple);
+    border-radius: 0.5rem;
+    margin: 1rem;
+  }
+
+  .price p {
+    margin: 0.5rem;
+  }
+
+  .title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family: var(--font-header);
+  }
+
+  .early-bird {
+    /* display: inline-block; */
+    font-size: 1.2rem;
+    color: var(--hi-purple);
+  }
+
+  .price .early-bird {
+    margin-bottom: 20px;
+  }
+  .amount {
+    font-size: 4rem;
+    /* font-weight: 600; */
+    font-family: var(--font-header);
+  }
+
+  .amount span {
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family: var(--font-header);
+  }
+
+  .discount {
+    font-size: 1rem;
+    color: var(--hi-purple);
+  }
+
+  .btn__container {
+    margin-top: auto;
+  }
+
+  .benefit {
+    color: grey;
+  }
+</style>

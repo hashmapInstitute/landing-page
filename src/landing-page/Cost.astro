@@ -1,0 +1,35 @@
+---
+import PriceSection from "./components/PriceSection.astro";
+---
+
+<div class="cost container">
+  <div class="cost__content">
+    <h2>What does this all cost</h2>
+    <div class="prices">
+      <PriceSection price="200" title="Basic" mentorSessions={1}/>
+      <PriceSection price="350" title="Premium" mentorSessions={2} codingPlatform />
+    </div>
+  </div>
+</div>
+
+<style>
+  .cost h2 {
+    text-align: center;
+  }
+
+  .cost {
+    background-image: url("/images/marvin-meyer-SYTO3xs06fU-unsplash.jpeg");
+    background-size: cover;
+  }
+
+  .cost__content {
+    background-color: rgba(255, 255, 255, 0.9);
+    margin: 20px 50px;
+    padding: 2rem 0;
+  }
+
+  .prices {
+    display: flex;
+    justify-content: space-around;
+  }
+</style>
