@@ -12,7 +12,7 @@ import Button from '../components/Button.astro'
         Our Web Developer course will equip you with the 
         foundational knowledge and training you need to start your new career in tech with confidence.
       </p>
-        <Button text="Learn More"/>
+      <Button text="Learn More"/>
     </div>
     <div class="hero-image">
       <img src="/images/code-on-macbook-reduced.webp" alt="laptop with code" class="hero__image">
@@ -22,26 +22,20 @@ import Button from '../components/Button.astro'
 
 <style>
   .hero {
-    /* background: url('https://source.unsplash.com/1600x900/?nature,water') no-repeat center center;
-    background-size: cover;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative; */
     background-color: var(--hi-purple);
   }
   
   .hero__content {
     display: flex;
     flex-wrap: wrap;
-     max-width: 1056px;  /* 1024 + 16 + 16 padding */
+    max-width: 1024px;  
 		margin: 0 auto;
   }
 
   .hero-image {
     width: 50%;
   }
+
   .hero-image img {
     width: 100%;
     height: 100%;
@@ -49,9 +43,10 @@ import Button from '../components/Button.astro'
   }
 
   .headings {
-    width: calc(50% - 32px);
+    width: 50%;
     padding: 16px;
   }
+
   .heading {
     font-size: 64px;
     /* margin: 0 0 32px 0; */
@@ -74,5 +69,42 @@ import Button from '../components/Button.astro'
     font-size: 18px;
     color: white;
     font-family: "Cabin", sans-serif;
+    margin: 0 0 16px 0;
   }
+
+  
+  .hero-image {
+    padding-right: 16px;
+  }
+
+  @media screen and (max-width: 1024px) {
+    .hero-image {
+      padding-right: 0;
+    }
+  }
+  @media screen and (max-width: 800px) {
+    .hero-image {
+      display: none;
+    }
+
+    .headings {
+      width: 100%;
+    }
+
+  }
+
+
+  @media screen and (max-width: 600px) {
+
+    .heading {
+      width: 100%;
+    }
+  }
+
+  @media screen and (max-width: 380px) {
+    .heading {
+      font-size: 48px;
+    }
+  }
+
 </style>

@@ -26,22 +26,32 @@ const { title, body, imgUrl } = Astro.props;
 		flex-direction: column;
 		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 		max-width: calc(33.33% - 8px);
-
-		/* text-align: center; */
 		font-family: arial;
 		background-color: white;
+
+		margin-bottom: 20px;
 	}
 	
 	.offer-card__text {
-		padding: 0 16px;
-		text-align: left;
-		/* background-color: var(--hi-purple); */
-		/* color: white; */
+		padding: 0 16px 16px;
+		text-align: left;	
 		flex-grow: 1;
 	}
 
 	.offer-card__title {
 		color: var(--hi-purple);
 		padding: 8px 0 0px 16px;
+	}
+
+	@media (max-width: 768px) {
+		.offer-card {
+			max-width: 100%;
+		}
+
+		.offer-card img {
+			object-fit: cover;
+			overflow: hidden;
+			height: 150px;
+		}
 	}
 </style>

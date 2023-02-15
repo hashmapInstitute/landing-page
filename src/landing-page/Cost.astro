@@ -23,7 +23,7 @@ import PriceSection from "./components/PriceSection.astro";
   }
 
   .cost__content {
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(255, 255, 255, 1);
     margin: 20px 50px;
     padding: 2rem 0;
   }
@@ -31,5 +31,17 @@ import PriceSection from "./components/PriceSection.astro";
   .prices {
     display: flex;
     justify-content: space-around;
+  }
+
+  @media (max-width: 768px) { 
+
+    .cost__content {
+      margin: 0;
+    }
+  }
+  @media (max-width: 680px) {
+    .prices {
+      flex-direction: column;
+    }
   }
 </style>

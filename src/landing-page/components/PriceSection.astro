@@ -9,11 +9,11 @@ const { price, title, mentorSessions, codingPlatform } = Astro.props;
   <p class="amount">£{price}<span>/mo</span></p>
   <p class="discount">50% discount</p>
   <p class="benefit">Video Course</p>
-  {codingPlatform  && <p class="benefit">Online coding platform</p>}
   <p class="benefit">Projects</p>
   <p class="benefit">Code Reviews</p>
-  <p class="benefit">{mentorSessions} Mentor session{mentorSessions > 1 ? "s": ""} per week</p>
   <p class="benefit">Access to online community</p>
+  <p class="benefit">{mentorSessions} Mentor session{mentorSessions > 1 ? "s": ""} per week</p>
+  {codingPlatform  && <p class="benefit">Online coding platform</p>}
 
   <div class="btn__container">
     <Button text={'Buy Now'}></Button>
@@ -28,8 +28,9 @@ const { price, title, mentorSessions, codingPlatform } = Astro.props;
     /* align-items: center; */
     justify-content: flex-start;
     padding: 2rem;
-    border: 1px solid var(--hi-purple);
-    border-radius: 0.5rem;
+    /* border: 1px solid var(--hi-purple); */
+    border: 1px solid black;
+    /* border-radius: 0.5rem; */
     margin: 1rem;
   }
 
@@ -75,5 +76,11 @@ const { price, title, mentorSessions, codingPlatform } = Astro.props;
 
   .benefit {
     color: grey;
+  }
+
+  @media (max-width: 768px) {
+    .price {
+      align-items: center;
+    }
   }
 </style>
